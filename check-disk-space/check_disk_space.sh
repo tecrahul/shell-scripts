@@ -92,7 +92,7 @@ check_disk_space(){
 ### Check if the disk is passed as command line else select root (/)
 if [ ${#disks[@]} -lt 1 ]; then
         echo "No disk is provided, Selecting root disk as default"
- disks[=]="/"
+ disks[0]="/"
 fi
  
 ### Create email content
