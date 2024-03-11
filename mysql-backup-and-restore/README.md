@@ -2,6 +2,8 @@
 
 This repository contains two scripts for managing MySQL database backups and restorations: one for backing up databases to a local directory and AWS S3, and another for restoring those backups either from the local system or S3.
 
+You can visit our webpage for detailed instructions: https://tecadmin.net/shell-scripts-to-mysql-backup-and-restore/
+
 ## Backup Script
 
 The backup script (`mysql_backup_script.sh`) automates the process of creating MySQL database backups, supporting daily, weekly, and monthly backup frequencies. It uploads these backups to an AWS S3 bucket and manages local and S3 backup retention.
