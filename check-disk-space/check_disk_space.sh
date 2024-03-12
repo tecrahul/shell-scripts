@@ -67,7 +67,7 @@ done
 send_notification(){
     echo "Sending email notification to ${NOTIFICATION_EMAIL}"
     SUBJECT="${1} ALERT: Host $HOSTNAME Disk Check"
-    mail -s ${NOTIFICATION_EMAIL} < ${mail_content}
+    mail -s ${SUBJECT} ${NOTIFICATION_EMAIL} < ${mail_content}
 }
  
 ### Function to check available space on a given disk 
